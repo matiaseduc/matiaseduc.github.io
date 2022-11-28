@@ -1,0 +1,372 @@
+:root {
+	--widget-background: #393939;
+	--background: #181a1b;
+	--color: #000;
+	--color-widget: #fff; 
+    --color-button: rgb(124, 176, 255); 
+
+    --color-button-github: rgb(255, 77, 77);
+    --color-button-twitter: rgb(30, 173, 255);
+    --color-button-mail: rgb(75, 255, 30);
+    --color-button-discord: rgb(255, 180, 17);
+	
+	--color-status-online: rgb(34, 197, 94);
+    --color-status-idle: rgb(247, 199, 67);
+    --color-status-dnd: rgb(255, 102, 71);
+    --color-status-offline: rgb(77, 73, 72);
+}
+
+@font-face {
+    font-family: 'edensor';
+    src: url("../fonts/Edensor-Free.otf") format("opentype");
+}
+
+.bg-green {
+	background-color: var(--color-status-online, #ffffff);
+}
+
+.bg-yellow {
+	background-color: var(--color-status-idle, #ffffff);
+}
+
+.bg-red {
+	background-color: var(--color-status-dnd, #ffffff);
+}
+
+.bg-grey {
+	background-color: var(--color-status-offline, #ffffff);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.dark-mode a {
+    color: var(--color-widget, #ffffff);
+}
+
+main .text ft:hover {
+    color: var(--color-button, rgb(85, 61, 57));
+    opacity: 1;
+}
+
+.dark-mode main .text ft:hover {
+    color: var(--color-button, rgb(109, 86, 82));
+    opacity: 0.75;
+}
+
+body {
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: var();
+}
+
+.dark-mode {
+    background-color: var(--widget-background, #ffffff);;
+    color: var(--color-widget, #ffffff);
+    transition: 0.4s;
+}
+
+.dark-mode .d034pp svg {
+	fill: var(--color-widget, #ffffff);
+}
+
+.dark-mode main .text .s-buttons svg {
+    stroke: var(--color-widget, #ffffff);
+    transition: 0.4s;
+    opacity: 0.5;
+}
+
+.dark-mode main .text .s-buttons .discord svg:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+    stroke: var(--color-button-discord, #181a1b);
+}
+
+.dark-mode main .text .s-buttons .github svg:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+    stroke: var(--color-button-github, #181a1b);
+}
+
+.dark-mode main .text .s-buttons .twitter svg:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+    stroke: var(--color-button-twitter, #181a1b);
+}
+
+.dark-mode main .text .s-buttons .mail svg:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+    stroke: var(--color-button-mail, #181a1b);
+}
+
+.dark-mode .header {
+    transition: 0.4s;
+    background-color: var(--widget-background, #181a1b);
+}
+
+.header {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    padding: 5;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    background-color: var(--color-widget, #ffffff);
+    bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        padding: 5;
+        align-items: center;
+        width: 100%;
+        position: unset;
+        justify-content: space-between;
+        background-color: var(--color-widget, #ffffff);
+        bottom: 0;
+        align-content: center;
+    }
+}
+
+.d034pp {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.d034pp svg {
+    height: 1rem;
+    width: 1rem;
+	fill: var(--background, #ffffff);
+    transition: 0.9s;
+    opacity: 0.5;
+}
+
+.d034pp svg:hover {
+    fill: var(--color-button, #000);
+	transition: 0.9s;
+    opacity: 1;
+}
+
+.d034p6 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.d034p6 #d034p6-t {
+    font-family: 'edensor';
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+
+@media screen and (max-width: 992px) {
+    main .s-home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 3rem;
+        align-items: center;
+        margin: 0;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+
+main .s-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+    align-items: center;
+    margin: 0;
+}
+
+main .text {
+    text-align: center;
+    padding-right: 5rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    main .text {
+        padding-right: 9rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .s-f-general {
+        display: flex;
+        /* left: 4rem; */
+        justify-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+}
+
+.s-h-general {
+	display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+
+
+main .text .s-h-general h1 {
+    font-size: 9rem;
+    font-family: 'edensor';
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    main .text .s-h-general h1 {
+        font-size: 6rem;
+        font-family: 'edensor';
+        text-align: left;
+        line-height: 5rem;
+        width: 76%;
+    }
+}
+
+main #status {
+	--tw-bg-opacity: 0.75;
+    width: 1.50rem;
+    border-radius: 2.75rem;
+    height: 1.50rem;
+    border: 0 solid rgb(240 240 240/var(--tw-bg-opacity));
+    box-sizing: border-box;
+    border-width: 0.20rem;
+}
+
+main #status-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    main #status {
+        display: none;
+    }
+
+    main #status-mobile {
+        --tw-bg-opacity: 0.75;
+        width: 3.25rem;
+        display: block;
+        border-radius: 2.75rem;
+        height: 3.25rem;
+        border: 0 solid rgb(255, 255, 255);
+        box-sizing: border-box;
+        border-width: 0.4rem;
+        position: absolute;
+    }
+
+    .dark-mode main #status-mobile  {
+        border-color: var(--widget-background, #ffffff);
+    }
+}
+
+main .text .informations {
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+}
+
+@media screen and (max-width: 992px) {
+    main .text .informations {
+        font-size: 1.15rem;
+        line-height: 1.25rem;
+        text-align: left;
+        padding-bottom: 1rem;
+        margin-left: 3.75rem;
+    }
+}
+
+main .text ft {
+    font-weight: 700; 
+    opacity: 0.5;
+}
+
+main .f-avatar {
+    padding-left: 2rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    main .f-avatar {
+        padding-left: 0;
+    }
+}
+
+main .f-avatar img {
+    height: 20rem;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 992px) {
+    main .f-avatar img {
+        border-radius: 40px;
+    }
+}
+
+main .text .s-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    main .text .s-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: stretch;
+        padding-bottom: 1rem;
+    }
+}
+
+main .text .s-buttons svg {
+    padding-top: 1rem;
+    height: 35px;
+    padding-left: 5px;
+    opacity: 0.5;
+    transition: 0.4s;
+    stroke: #000;
+}
+
+main .text .s-buttons .discord svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    stroke: var(--color-button-discord, #ffffff);
+}
+
+main .text .s-buttons .github svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    stroke: var(--color-button-github, #ffffff);
+}
+
+main .text .s-buttons .twitter svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    stroke: var(--color-button-twitter, #ffffff);
+}
+
+main .text .s-buttons .mail svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    stroke: var(--color-button-mail, #ffffff);
+}
