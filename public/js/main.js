@@ -10,7 +10,7 @@ function toggleTheme() {
 }
 
 try {
-    fetch("https://api.g3z.repl.co/xyz", {
+    fetch("https://api-inpuxl9of-g3zzing.vercel.app/", {
   
     }).then(res => res.json()).then(r => {
       document.getElementById("p-avatar").src = `${r.avatar}` 
