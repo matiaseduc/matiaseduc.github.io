@@ -1,0 +1,1210 @@
+:root {
+	--widget-background: #393939;
+	--background: #181a1b;
+	--color: #000;
+	--color-widget: #fff; 
+    --color-button: rgb(124, 176, 255); 
+
+    --color-button-github: rgb(156, 218, 241);
+    --color-button-twitter: rgb(29, 161, 242);
+    --color-button-mail: rgb(98, 87, 252);;
+    --color-button-discord: rgb(40, 103, 178);;
+	
+	--color-status-online: rgb(34, 197, 94);
+    --color-status-idle: rgb(247, 199, 67);
+    --color-status-dnd: rgb(255, 102, 71);
+    --color-status-offline: rgb(77, 73, 72);
+}
+
+@font-face {
+    font-family: 'edensor';
+    src: url("../fonts/Edensor-Free.otf") format("opentype");
+}
+
+body {
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: var();
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+    display:none
+}
+
+.bg-green {
+	background-color: var(--color-status-online, #ffffff);
+}
+
+.bg-yellow {
+	background-color: var(--color-status-idle, #ffffff);
+}
+
+.bg-red {
+	background-color: var(--color-status-dnd, #ffffff);
+}
+
+.bg-grey {
+	background-color: var(--color-status-offline, #ffffff);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.7s;
+}
+
+.dark-mode a {
+    color: var(--color-widget, #ffffff);
+    transition: 0.7s;
+}
+
+.dark-mode #snowflake {
+    --size: 2vw;
+    width: var(--size);
+    height: var(--size);
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -5vh;
+	opacity: 0.40;
+}
+
+@media screen and (max-width: 992px) {
+	.dark-mode #snowflake {
+		--size: 2vw;
+		width: var(--size);
+		height: var(--size);
+		background: white;
+		border-radius: 50%;
+		position: absolute;
+		top: -5vh;
+		opacity: 1;
+	}
+}
+
+main .text ft:hover {
+    color: var(--color-button, rgb(85, 61, 57));
+    opacity: 1;
+    transition: 0.7s;
+}
+
+.dark-mode main .text ft:hover {
+    color: var(--color-button, rgb(109, 86, 82));
+    opacity: 0.75;
+    transition: 0.7s;
+}
+
+.dark-mode {
+    background-color: var(--widget-background, #ffffff);;
+    color: var(--color-widget, #ffffff);
+    transition: 0.4s;
+}
+
+.dark-mode .d034pp svg {
+	fill: var(--color-widget, #ffffff);
+}
+
+.dark-mode main .text .s-buttons svg {
+    stroke: var(--color-widget, #ffffff);
+    transition: 0.4s;
+    opacity: 0.8;
+}
+
+.dark-mode main .text .s-buttons .discord svg {
+    stroke: none;
+    transition: 0.4s;
+    opacity: 0.8;
+}
+
+.dark-mode main .text .s-buttons .discord svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    fill: var(--color-button-discord, #181a1b);
+}
+
+.dark-mode main .text .s-buttons .github svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    stroke: var(--color-button-github, #181a1b);
+}
+
+.dark-mode main .text .s-buttons .twitter svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    stroke: var(--color-button-twitter, #181a1b);
+}
+
+.dark-mode main .text .s-buttons .mail svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    stroke: var(--color-button-mail, #181a1b);
+}
+
+.dark-mode .header {
+    transition: 0.4s;
+    background-color: var(--widget-background, #181a1b);
+}
+
+.dark-mode main .s-list .s-tec-photos svg {
+    fill: #fff;
+}
+
+.dark-mode main .s-list .s-tec-photos polygon {
+    fill: #4a4a4a;
+}
+
+.dark-mode .s-list-i .s-list-icons .s-box-list p {
+    font-size: 1rem;
+    line-height: 1px;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.dark-mode .s-list-i .s-list-icons .s-box-list {
+    border-radius: 0.25rem;
+    padding-right: 0.2rem;
+    padding-left: 0.5rem;
+    background-color: rgb(92 92 92 / 0.17);
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+.dark-mode .s-list-i .s-list-icons .s-box-list svg {
+    fill: #fff;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 5;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    background-color: var(--color-widget, #ffffff);
+    bottom: 0;
+    max-height: max-content;
+    min-width: fit-content;
+}
+
+.section-divider {
+    opacity: 0.2;
+    overflow: hidden;
+    margin-left: -100%;
+    margin-right: -100%;
+    transform: skewY(-2deg);
+    border-color: white;
+    border: 0.1px solid;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        padding: 5;
+        align-items: center;
+        width: 100%;
+        position: unset;
+        justify-content: space-between;
+        background-color: var(--color-widget, #ffffff);
+        bottom: 0;
+        align-content: center;
+    }
+}
+
+.d034pp {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.d034pp svg {
+    height: 1rem;
+    width: 1rem;
+	fill: var(--background, #ffffff);
+    transition: 0.9s;
+    opacity: 0.5;
+}
+
+.d034pp svg:hover {
+    fill: var(--color-button, #000);
+	transition: 0.9s;
+    opacity: 1;
+}
+
+.d034p6 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.d034p6 #d034p6-t {
+    font-family: 'edensor';
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+
+@media screen and (max-width: 992px) {
+    main .s-home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 3rem;
+        align-items: center;
+        margin: 0;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+
+main .s-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+    padding: 10px;
+	padding-bottom: 20rem;
+    align-items: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+	main .s-home {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		padding-top: 5rem;
+		padding-bottom: 6rem;
+		padding: 70px;
+		align-items: center;
+		margin: 0;
+	}
+}
+
+main .text {
+    text-align: center;
+    padding-right: 5rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    main .text {
+        padding-right: 9rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .s-f-general {
+        display: flex;
+        /* left: 4rem; */
+        justify-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+}
+
+.s-h-general {
+	display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+
+
+main .text .s-h-general h1 {
+    font-size: 9rem;
+    font-family: 'edensor';
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    main .text .s-h-general h1 {
+        font-size: 6rem;
+        font-family: 'edensor';
+        text-align: left;
+        line-height: 5rem;
+        width: 76%;
+    }
+}
+
+main #status {
+	--tw-bg-opacity: 0.75;
+    width: 1.50rem;
+    border-radius: 2.75rem;
+    height: 1.50rem;
+    border: 0 solid rgb(240 240 240/var(--tw-bg-opacity));
+    box-sizing: border-box;
+    border-width: 0.20rem;
+}
+
+main #status-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    main #status {
+        display: none;
+    }
+
+    main #status-mobile {
+        --tw-bg-opacity: 0.75;
+        width: 3.25rem;
+        display: block;
+        border-radius: 2.75rem;
+        height: 3.25rem;
+        border: 0 solid rgb(255, 255, 255);
+        box-sizing: border-box;
+        border-width: 0.4rem;
+        position: absolute;
+    }
+
+    .dark-mode main #status-mobile  {
+        border-color: var(--widget-background, #ffffff);
+    }
+}
+
+main .text .informations {
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+}
+
+@media screen and (max-width: 992px) {
+    main .text .informations {
+        font-size: 1.15rem;
+        line-height: 1.25rem;
+        text-align: left;
+        padding-bottom: 1rem;
+        margin-left: 3.75rem;
+    }
+}
+
+main .text ft {
+    font-weight: 700; 
+    opacity: 0.5;
+}
+
+main .f-avatar {
+    padding-left: 2rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    main .f-avatar {
+        padding-left: 0;
+    }
+}
+
+main .f-avatar img {
+    height: 22rem;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 992px) {
+    main .f-avatar img {
+		height: 18rem;
+        border-radius: 40px;
+    }
+}
+
+main .text .s-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    main .text .s-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: stretch;
+        padding-bottom: 1rem;
+    }
+}
+
+main .text .s-buttons svg {
+    padding-top: 1rem;
+    height: 35px;
+    padding-left: 5px;
+    opacity: 0.5;
+    transition: 0.4s;
+    stroke: #000;
+}
+
+main .text .s-buttons .discord svg {
+    padding-top: 1rem;
+    height: 35px;
+    padding-left: 5px;
+    opacity: 0.5;
+    transition: 0.4s;
+    stroke: none;
+}
+
+main .text .s-buttons .discord svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    fill: var(--color-button-discord, #ffffff);
+}
+
+main .text .s-buttons .github svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    stroke: var(--color-button-github, #ffffff);
+}
+
+main .text .s-buttons .twitter svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    stroke: var(--color-button-twitter, #ffffff);
+}
+
+main .text .s-buttons .mail svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    stroke: var(--color-button-mail, #ffffff);
+}
+
+
+.activity {
+    border-radius: 1rem;
+    padding: 15px;
+    max-width: 20rem;
+    min-height: 50px;
+    max-height: 70px;
+    display: flex;
+    height: 100%;
+    position: relative;
+    margin-left: 10rem;
+    background-color: rgb(92 92 92 / 0.17);
+}
+
+@media screen and (max-width: 992px) {
+	.activity {
+		border-radius: 0.75rem;
+		padding: 20;
+		/* max-width: 20rem; */
+		min-height: 74px;
+		/* max-height: 50px; */
+		display: flex;
+		width: 120%;
+		position: relative;
+		margin-left: 0;
+		background-color: rgb(92 92 92 / 0.17);
+	}
+}
+
+.activity .list-activity {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+.bar {
+   background: green;
+    bottom: 1px;
+    height: 3px;
+    position: absolute;
+    width: 3px;      
+    animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+    0% {
+       opacity: .35;
+        height: 3px; 
+    }
+    100% {
+        opacity: 1;       
+        height: 28px;        
+    }
+}
+
+.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+.bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
+.bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
+.bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
+.bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
+.bar:nth-child(6)  { left: 21px; animation-duration: 427ms; }
+.bar:nth-child(7)  { left: 25px; animation-duration: 441ms; }
+.bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
+.bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
+.bar:nth-child(10) { left: 37px; animation-duration: 442ms; }
+.bar:nth-child(11)  { left: 1px; animation-duration: 474ms; }
+.bar:nth-child(12)  { left: 5px; animation-duration: 433ms; }
+.bar:nth-child(13)  { left: 9px; animation-duration: 407ms; }
+.bar:nth-child(14)  { left: 13px; animation-duration: 458ms; }
+.bar:nth-child(15)  { left: 17px; animation-duration: 400ms; }
+.bar:nth-child(16)  { left: 21px; animation-duration: 427ms; }
+.bar:nth-child(17)  { left: 25px; animation-duration: 441ms; }
+.bar:nth-child(18)  { left: 29px; animation-duration: 419ms; }
+.bar:nth-child(19)  { left: 33px; animation-duration: 487ms; }
+.bar:nth-child(20) { left: 37px; animation-duration: 442ms; }
+
+main .s-about-more {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 3rem; */
+    padding: 70px 20px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+main .s-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 3rem; */
+    padding: 70px 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+main .s-technologies h1 {
+    font-family: 'edensor';
+    font-size: 4.25rem;
+    line-height: 0rem;
+}
+
+@media screen and (max-width: 992px) {
+    main .s-technologies h1 {
+        font-family: 'edensor';
+        font-size: 3.9rem;
+        line-height: 0rem;
+    }
+}
+
+
+main .s-technologies p {
+    font-size: 1.20rem;
+}
+
+main .s-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-bottom: 7rem;
+}
+
+@media screen and (max-width: 992px) {
+    main .s-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding: 0;
+    }
+}
+
+main .s-list .s-tec-photos {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.50rem;
+    margin-bottom: 0.50rem;
+}
+
+.s-information {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 3rem; */
+    padding: 70px 20px;
+    /* padding-bottom: 7rem; */
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    .s-information {
+        display: flex;
+        flex-wrap: wrap;
+        /* gap: 3rem; */
+        padding: 0;
+        /* padding-bottom: 7rem; */
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+
+.s-information h1 {
+    font-family: 'edensor';
+    font-size: 3rem;
+}
+
+.s-information h2 {
+    font-size: 1.20rem;
+}
+
+.s-information p {
+    width: 90%;
+    font-size: .1.20rem;
+}
+
+.s-list-i .s-list-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    gap: 5px;
+}
+
+.s-list-i .s-list-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    gap: 5px
+}
+
+
+.s-list-i .s-list-icons .s-box-list p {
+    font-size: 1rem;
+    line-height: 1px;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.s-list-i .s-list-icons .s-box-list {
+    border-radius: 0.25rem;
+    padding-right: 0.2rem;
+    padding-left: 0.5rem;
+    background-color: rgb(233 233 233 / 0.74);
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+#snowflake {
+	 --size: 2vw;
+	 width: var(--size);
+	 height: var(--size);
+	 opacity: 0.25;
+	 background: rgb(0 0 0 / 46%);
+	 border-radius: 50%;
+	 position: absolute;
+	 top: -5vh;
+}
+
+@media screen and (max-width: 992px) {
+	#snowflake {
+		 --size: 2vw;
+		 width: var(--size);
+		 height: var(--size);
+		 opacity: 0.75;
+		 background: rgb(0 0 0 / 46%);
+		 border-radius: 50%;
+		 position: absolute;
+		 top: -5vh;
+	}
+}
+
+ @keyframes snowfall {
+	 0% {
+		 transform: translate3d(var(--left-ini), 0, 0);
+	}
+	 100% {
+		 transform: translate3d(var(--left-end), 110vh, 0);
+	}
+}
+ #snowflake:nth-child(1) {
+	 --size: 0.2vw;
+	 --left-ini: -5vw;
+	 --left-end: -2vw;
+	 left: 66vw;
+	 animation: snowfall 8s linear infinite;
+	 animation-delay: -3s;
+}
+ #snowflake:nth-child(2) {
+	 --size: 1vw;
+	 --left-ini: -3vw;
+	 --left-end: 8vw;
+	 left: 15vw;
+	 animation: snowfall 8s linear infinite;
+	 animation-delay: -9s;
+}
+ #snowflake:nth-child(3) {
+	 --size: 1vw;
+	 --left-ini: 3vw;
+	 --left-end: -6vw;
+	 left: 12vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -10s;
+}
+ #snowflake:nth-child(4) {
+	 --size: 0.2vw;
+	 --left-ini: -5vw;
+	 --left-end: -4vw;
+	 left: 40vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -10s;
+}
+ #snowflake:nth-child(5) {
+	 --size: 1vw;
+	 --left-ini: -5vw;
+	 --left-end: 4vw;
+	 left: 80vw;
+	 animation: snowfall 10s linear infinite;
+	 animation-delay: -7s;
+}
+ #snowflake:nth-child(6) {
+	 --size: 0.8vw;
+	 --left-ini: 5vw;
+	 --left-end: 3vw;
+	 left: 49vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -8s;
+}
+ #snowflake:nth-child(7) {
+	 --size: 0.2vw;
+	 --left-ini: 8vw;
+	 --left-end: -3vw;
+	 left: 87vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -10s;
+}
+ #snowflake:nth-child(8) {
+	 --size: 1vw;
+	 --left-ini: -4vw;
+	 --left-end: -3vw;
+	 left: 4vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -3s;
+}
+ #snowflake:nth-child(9) {
+	 --size: 0.6vw;
+	 --left-ini: 1vw;
+	 --left-end: -3vw;
+	 left: 72vw;
+	 animation: snowfall 14s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(10) {
+	 --size: 0.8vw;
+	 --left-ini: 2vw;
+	 --left-end: -2vw;
+	 left: 27vw;
+	 animation: snowfall 6s linear infinite;
+	 animation-delay: -3s;
+}
+ #snowflake:nth-child(11) {
+	 --size: 0.2vw;
+	 --left-ini: 6vw;
+	 --left-end: -9vw;
+	 left: 47vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(12) {
+	 --size: 0.8vw;
+	 --left-ini: -2vw;
+	 --left-end: 0vw;
+	 left: 72vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -2s;
+}
+ #snowflake:nth-child(13) {
+	 --size: 0.2vw;
+	 --left-ini: 3vw;
+	 --left-end: -4vw;
+	 left: 65vw;
+	 animation: snowfall 7s linear infinite;
+	 animation-delay: -5s;
+}
+ #snowflake:nth-child(14) {
+	 --size: 0.2vw;
+	 --left-ini: 8vw;
+	 --left-end: 1vw;
+	 left: 87vw;
+	 animation: snowfall 10s linear infinite;
+	 animation-delay: -6s;
+}
+ #snowflake:nth-child(15) {
+	 --size: 0.8vw;
+	 --left-ini: -1vw;
+	 --left-end: 2vw;
+	 left: 50vw;
+	 animation: snowfall 6s linear infinite;
+	 animation-delay: -10s;
+}
+ #snowflake:nth-child(16) {
+	 --size: 0.2vw;
+	 --left-ini: -4vw;
+	 --left-end: 4vw;
+	 left: 72vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -10s;
+}
+ #snowflake:nth-child(17) {
+	 --size: 1vw;
+	 --left-ini: 3vw;
+	 --left-end: -1vw;
+	 left: 98vw;
+	 animation: snowfall 8s linear infinite;
+	 animation-delay: -6s;
+}
+ #snowflake:nth-child(18) {
+	 --size: 1vw;
+	 --left-ini: 10vw;
+	 --left-end: 6vw;
+	 left: 62vw;
+	 animation: snowfall 14s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(19) {
+	 --size: 0.2vw;
+	 --left-ini: -4vw;
+	 --left-end: -2vw;
+	 left: 52vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -2s;
+}
+ #snowflake:nth-child(20) {
+	 --size: 0.8vw;
+	 --left-ini: 10vw;
+	 --left-end: -7vw;
+	 left: 37vw;
+	 animation: snowfall 6s linear infinite;
+	 animation-delay: -8s;
+}
+ #snowflake:nth-child(21) {
+	 --size: 1vw;
+	 --left-ini: 2vw;
+	 --left-end: -7vw;
+	 left: 50vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(22) {
+	 --size: 0.8vw;
+	 --left-ini: 9vw;
+	 --left-end: 3vw;
+	 left: 5vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -2s;
+}
+ #snowflake:nth-child(23) {
+	 --size: 0.2vw;
+	 --left-ini: 8vw;
+	 --left-end: -7vw;
+	 left: 99vw;
+	 animation: snowfall 6s linear infinite;
+	 animation-delay: -5s;
+}
+ #snowflake:nth-child(24) {
+	 --size: 0.8vw;
+	 --left-ini: -5vw;
+	 --left-end: -2vw;
+	 left: 42vw;
+	 animation: snowfall 10s linear infinite;
+	 animation-delay: -10s;
+}
+ #snowflake:nth-child(25) {
+	 --size: 0.6vw;
+	 --left-ini: 2vw;
+	 --left-end: 9vw;
+	 left: 13vw;
+	 animation: snowfall 15s linear infinite;
+	 animation-delay: -5s;
+}
+ #snowflake:nth-child(26) {
+	 --size: 0.6vw;
+	 --left-ini: -7vw;
+	 --left-end: 10vw;
+	 left: 46vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -5s;
+}
+ #snowflake:nth-child(27) {
+	 --size: 0.6vw;
+	 --left-ini: 10vw;
+	 --left-end: 8vw;
+	 left: 61vw;
+	 animation: snowfall 8s linear infinite;
+	 animation-delay: -10s;
+}
+ #snowflake:nth-child(28) {
+	 --size: 1vw;
+	 --left-ini: 10vw;
+	 --left-end: 10vw;
+	 left: 31vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -2s;
+}
+ #snowflake:nth-child(29) {
+	 --size: 0.8vw;
+	 --left-ini: -2vw;
+	 --left-end: 4vw;
+	 left: 13vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -6s;
+}
+ #snowflake:nth-child(30) {
+	 --size: 0.4vw;
+	 --left-ini: 1vw;
+	 --left-end: -1vw;
+	 left: 42vw;
+	 animation: snowfall 7s linear infinite;
+	 animation-delay: -5s;
+}
+ #snowflake:nth-child(31) {
+	 --size: 0.4vw;
+	 --left-ini: -2vw;
+	 --left-end: 6vw;
+	 left: 31vw;
+	 animation: snowfall 14s linear infinite;
+	 animation-delay: -9s;
+}
+ #snowflake:nth-child(32) {
+	 --size: 0.2vw;
+	 --left-ini: 8vw;
+	 --left-end: 5vw;
+	 left: 65vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -8s;
+}
+ #snowflake:nth-child(33) {
+	 --size: 0.4vw;
+	 --left-ini: 0vw;
+	 --left-end: -9vw;
+	 left: 80vw;
+	 animation: snowfall 14s linear infinite;
+	 animation-delay: -1s;
+}
+ #snowflake:nth-child(34) {
+	 --size: 0.4vw;
+	 --left-ini: -7vw;
+	 --left-end: 10vw;
+	 left: 18vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -7s;
+}
+ #snowflake:nth-child(35) {
+	 --size: 1vw;
+	 --left-ini: 7vw;
+	 --left-end: -2vw;
+	 left: 24vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -5s;
+}
+ #snowflake:nth-child(36) {
+	 --size: 0.4vw;
+	 --left-ini: 10vw;
+	 --left-end: -4vw;
+	 left: 21vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -8s;
+}
+ #snowflake:nth-child(37) {
+	 --size: 0.2vw;
+	 --left-ini: -9vw;
+	 --left-end: -3vw;
+	 left: 62vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -7s;
+}
+ #snowflake:nth-child(38) {
+	 --size: 0.6vw;
+	 --left-ini: 9vw;
+	 --left-end: 4vw;
+	 left: 38vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(39) {
+	 --size: 0.2vw;
+	 --left-ini: -3vw;
+	 --left-end: -7vw;
+	 left: 1vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(40) {
+	 --size: 0.6vw;
+	 --left-ini: 4vw;
+	 --left-end: 6vw;
+	 left: 30vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -5s;
+}
+ #snowflake:nth-child(41) {
+	 --size: 0.8vw;
+	 --left-ini: 4vw;
+	 --left-end: -9vw;
+	 left: 1vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -6s;
+}
+ #snowflake:nth-child(42) {
+	 --size: 0.2vw;
+	 --left-ini: -6vw;
+	 --left-end: 8vw;
+	 left: 52vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -8s;
+}
+ #snowflake:nth-child(43) {
+	 --size: 0.4vw;
+	 --left-ini: 6vw;
+	 --left-end: -8vw;
+	 left: 15vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -9s;
+}
+ #snowflake:nth-child(44) {
+	 --size: 0.2vw;
+	 --left-ini: -3vw;
+	 --left-end: 4vw;
+	 left: 93vw;
+	 animation: snowfall 10s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(45) {
+	 --size: 0.6vw;
+	 --left-ini: -6vw;
+	 --left-end: 9vw;
+	 left: 100vw;
+	 animation: snowfall 13s linear infinite;
+	 animation-delay: -9s;
+}
+ #snowflake:nth-child(46) {
+	 --size: 0.8vw;
+	 --left-ini: -3vw;
+	 --left-end: 9vw;
+	 left: 78vw;
+	 animation: snowfall 15s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(47) {
+	 --size: 0.2vw;
+	 --left-ini: 5vw;
+	 --left-end: 2vw;
+	 left: 38vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -7s;
+}
+ #snowflake:nth-child(48) {
+	 --size: 0.6vw;
+	 --left-ini: 8vw;
+	 --left-end: 8vw;
+	 left: 51vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(49) {
+	 --size: 1vw;
+	 --left-ini: 10vw;
+	 --left-end: -9vw;
+	 left: 39vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -9s;
+}
+ #snowflake:nth-child(50) {
+	 --size: 1vw;
+	 --left-ini: 9vw;
+	 --left-end: -8vw;
+	 left: 19vw;
+	 animation: snowfall 7s linear infinite;
+	 animation-delay: -10s;
+}
+ #snowflake:nth-child(51) {
+	 --size: 0.4vw;
+	 --left-ini: -2vw;
+	 --left-end: 6vw;
+	 left: 31vw;
+	 animation: snowfall 14s linear infinite;
+	 animation-delay: -9s;
+}
+ #snowflake:nth-child(52) {
+	 --size: 0.2vw;
+	 --left-ini: 8vw;
+	 --left-end: 5vw;
+	 left: 65vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -8s;
+}
+ #snowflake:nth-child(53) {
+	 --size: 0.4vw;
+	 --left-ini: 0vw;
+	 --left-end: -9vw;
+	 left: 80vw;
+	 animation: snowfall 14s linear infinite;
+	 animation-delay: -1s;
+}
+ #snowflake:nth-child(54) {
+	 --size: 0.4vw;
+	 --left-ini: -7vw;
+	 --left-end: 10vw;
+	 left: 18vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -7s;
+}
+ #snowflake:nth-child(55) {
+	 --size: 1vw;
+	 --left-ini: 7vw;
+	 --left-end: -2vw;
+	 left: 24vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -5s;
+}
+ #snowflake:nth-child(56) {
+	 --size: 0.4vw;
+	 --left-ini: 10vw;
+	 --left-end: -4vw;
+	 left: 21vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -8s;
+}
+ #snowflake:nth-child(57) {
+	 --size: 0.2vw;
+	 --left-ini: -9vw;
+	 --left-end: -3vw;
+	 left: 62vw;
+	 animation: snowfall 9s linear infinite;
+	 animation-delay: -7s;
+}
+ #snowflake:nth-child(58) {
+	 --size: 0.6vw;
+	 --left-ini: 9vw;
+	 --left-end: 4vw;
+	 left: 38vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(59) {
+	 --size: 0.2vw;
+	 --left-ini: -3vw;
+	 --left-end: -7vw;
+	 left: 1vw;
+	 animation: snowfall 11s linear infinite;
+	 animation-delay: -4s;
+}
+ #snowflake:nth-child(60) {
+	 --size: 0.6vw;
+	 --left-ini: 4vw;
+	 --left-end: 6vw;
+	 left: 30vw;
+	 animation: snowfall 12s linear infinite;
+	 animation-delay: -5s;
+}
+/* added small blur every 6 snowflakes*/
+ #snowflake:nth-child(6n) {
+	 filter: blur(1px);
+}
