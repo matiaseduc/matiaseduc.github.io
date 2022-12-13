@@ -3,17 +3,17 @@
 	--background: #181a1b;
 	--color: #000;
 	--color-widget: #fff; 
-    --color-button: rgb(124, 176, 255); 
+	--color-button: rgb(124, 176, 255); 
 
-    --color-button-github: rgb(156, 218, 241);
-    --color-button-twitter: rgb(29, 161, 242);
-    --color-button-mail: rgb(98, 87, 252);;
-    --color-button-discord: rgb(40, 103, 178);;
-	
+	--color-button-github: rgb(156, 218, 241);
+	--color-button-twitter: rgb(29, 161, 242);
+	--color-button-mail: rgb(98, 87, 252);;
+	--color-button-discord: rgb(40, 103, 178);;
+
 	--color-status-online: rgb(34, 197, 94);
-    --color-status-idle: rgb(247, 199, 67);
-    --color-status-dnd: rgb(255, 102, 71);
-    --color-status-offline: rgb(77, 73, 72);
+	--color-status-idle: rgb(247, 199, 67);
+	--color-status-dnd: rgb(255, 102, 71);
+	--color-status-offline: rgb(77, 73, 72);
 }
 
 @font-face {
@@ -28,8 +28,8 @@ body {
 }
 
 ::-webkit-scrollbar{
-    width:8px;
-    display:none
+    width: 8px;
+    display: none;
 }
 
 .bg-green {
@@ -264,8 +264,8 @@ main .s-home {
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 5rem;
-    padding: 10px;
-	padding-bottom: 20rem;
+    padding: 60px;
+    padding-bottom: 20rem;
     align-items: center;
     margin: 0;
 }
