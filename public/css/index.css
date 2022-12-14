@@ -416,6 +416,7 @@ main .f-avatar {
 }
 
 main .f-avatar img {
+    width: 22rem;
     height: 22rem;
     border-radius: 20px;
     pointer-events: none;
@@ -423,7 +424,8 @@ main .f-avatar img {
 
 @media screen and (max-width: 992px) {
     main .f-avatar img {
-		height: 18rem;
+	width: 18rem;
+	height: 18rem;
         border-radius: 40px;
     }
 }
