@@ -19,12 +19,13 @@
 @font-face {
     font-family: 'edensor';
     src: url("../fonts/Edensor-Free.otf") format("opentype");
+    font-display: swap;
 }
 
 body {
     font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: var();
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar{
