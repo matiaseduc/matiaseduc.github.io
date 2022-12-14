@@ -46,9 +46,9 @@ try {
 			 } else {
 				 $(".activity").html(`
 						<div class="list-activity">
-							<img width="70" alt="Sound Bars" style="border-radius: 6px;"src="https://i.scdn.co/image/${r.information.assets.largeImage.substr(8)}">
+							<img width="70" height="70" alt="Cover of the song on spotify" style="border-radius: 6px;" src="https://i.scdn.co/image/${r.information.assets.largeImage.substr(8)}">
 							<div style="line-height: 0.8;" class="list-a-texts">
-								<h4 style="font-size: 1rem; text-align: left;"><img style="width: 15px;" alt="Cover of the song on spotify" src="https://open.spotifycdn.com/cdn/images/equaliser-animated-green.f5eb96f2.gif"> <color style="color: #1db954;">${r.information.details}</color></h4>
+								<h4 style="font-size: 1rem; text-align: left;"><img width="15px" height="15px" alt="Sound Bars" src="https://open.spotifycdn.com/cdn/images/equaliser-animated-green.f5eb96f2.gif"> <color style="color: #1db954;">${r.information.details}</color></h4>
 								<p style="font-size: 0.900rem; text-align: left; line-height: 0.99; padding-bottom: 10px;">${r.information.state}</p>
 							</div> 
 						</div>`);
