@@ -12,13 +12,13 @@ function toggleTheme() {
 try {
 	
 	
-	fetch("https://api-kyivdcbun-g3zzing.vercel.app/xz", {
-  
-    }).then(res => res.json()).then(r => {
-		console.log("%cApplication Programming Interface%c Routes connection opened","padding: 10px; font-size: 1em; line-height: 1.4em; color: white; background: #000; border-radius: 15px;","font-size: 1em;")
-	})
+		fetch("https://api-kyivdcbun-g3zzing.vercel.app/xz", {
+
+	    }).then(res => res.json()).then(r => {
+			console.log("%cApplication Programming Interface%c Routes connection opened","padding: 10px; font-size: 1em; line-height: 1.4em; color: white; background: #000; border-radius: 15px;","font-size: 1em;")
+		})
 	
-		fetch("https://api-kyivdcbun-g3zzing.vercel.app/", {
+		fetch("https://api.c1arl0seduardo.repl.co/", {
 	  
 		}).then(res => res.json()).then(r => {
 		  document.getElementById("p-avatar").src = `${r.avatar}` 
@@ -37,7 +37,7 @@ try {
 		  }
 		})
 		
-		fetch("https://api-kyivdcbun-g3zzing.vercel.app/acti", {
+		fetch("https://api.c1arl0seduardo.repl.co/acti", {
 		  
 			}).then(res => res.json()).then(r => {
 				
