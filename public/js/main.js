@@ -18,8 +18,6 @@ try {
 		console.log("%cApplication Programming Interface%c Routes connection opened","padding: 10px; font-size: 1em; line-height: 1.4em; color: white; background: #000; border-radius: 15px;","font-size: 1em;")
 	})
 	
-	
-	setTimeout(() => {
 		fetch("https://api-kyivdcbun-g3zzing.vercel.app/", {
 	  
 		}).then(res => res.json()).then(r => {
@@ -100,7 +98,6 @@ try {
 			});
 
 		})
-	}, 1200)
 }  catch (e) {
 		console.log(e)
 }
