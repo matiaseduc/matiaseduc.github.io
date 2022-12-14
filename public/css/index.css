@@ -234,6 +234,17 @@ main .text ft:hover {
     opacity: 1;
 }
 
+.header .d034pp button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+}
+
 .d034p6 {
     margin-left: 50px;
     margin-right: 50px;
