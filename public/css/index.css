@@ -393,6 +393,7 @@ main .text ft {
 
 main .f-avatar {
     padding-left: 2rem;
+    transform: rotateY(180deg);
 }
 
 
