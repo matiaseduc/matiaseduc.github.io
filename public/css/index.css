@@ -181,7 +181,7 @@ main .text ft:hover {
     flex-direction: row;
     padding: 5;
     align-items: center;
-    width: 100%;
+    width: 95%;
     position: fixed;
     justify-content: space-between;
     background-color: var(--color-widget, #ffffff);
