@@ -60,8 +60,7 @@ try {
 				document.getElementById("d034p6-t").innerHTML = `"${r.slip.advice}"`  
 		})
 
-		
-		if (!new Date().getMonth() === 11) {
+		if (new Date().getMonth() !== 11) {
 			var elms = document.querySelectorAll("[id='snowflake']");
 	 
 			for(var i = 0; i < elms.length; i++) {
