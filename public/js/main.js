@@ -64,7 +64,7 @@ try {
 			var elms = document.querySelectorAll("[id='snowflake']");
 	 
 			for(var i = 0; i < elms.length; i++) {
-			  $('#snowflake').eq(elms[i]).remove();
+			  $("#snowflake").slice(5).remove();
 			}
 		} 
 
