@@ -118,6 +118,12 @@ main .text ft:hover {
     opacity: 0.8;
 }
 
+.dark-mode main .text .s-buttons .instagram svg {
+    stroke: none;
+    transition: 0.4s;
+    opacity: 0.8;
+}
+
 .dark-mode main .text .s-buttons .discord svg:hover {
     opacity: 1;
     transition: 0.4s;
@@ -464,6 +470,15 @@ main .text .s-buttons svg {
 }
 
 main .text .s-buttons .discord svg {
+    padding-top: 1rem;
+    height: 35px;
+    padding-left: 5px;
+    opacity: 0.5;
+    transition: 0.4s;
+    stroke: none;
+}
+
+main .text .s-buttons .instagram svg {
     padding-top: 1rem;
     height: 35px;
     padding-left: 5px;
