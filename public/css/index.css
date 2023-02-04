@@ -130,6 +130,12 @@ main .text ft:hover {
     stroke: var(--color-button-github, #181a1b);
 }
 
+.dark-mode main .text .s-buttons .instagram svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    fill: var(--color-button-github, #181a1b);
+}
+
 .dark-mode main .text .s-buttons .twitter svg:hover {
     opacity: 1;
     transition: 0.4s;
@@ -476,6 +482,12 @@ main .text .s-buttons .github svg:hover {
     opacity: 1;
     transition: 0.4s;
     stroke: var(--color-button-github, #ffffff);
+}
+
+main .text .s-buttons .instagram svg:hover {
+    opacity: 1;
+    transition: 0.4s;
+    fill: var(--color-button-github, #ffffff);
 }
 
 main .text .s-buttons .twitter svg:hover {
